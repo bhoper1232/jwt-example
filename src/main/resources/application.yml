@@ -1,6 +1,13 @@
 spring:
   application:
     name: jwt-example
+  datasource:
+    url: jdbc:postgresql://localhost:5433/testdb
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
 
 rsa:
   private-key: classpath:certs/private.pem
